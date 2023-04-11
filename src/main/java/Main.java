@@ -1,5 +1,7 @@
 import model.*;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -14,7 +16,22 @@ public class Main {
         cow.setDiet(DietType.herbivore);
 
 
-        System.out.println(cow.calculateSpeed());
+        //Zoo class instance
+        Zoo zoo = new Zoo("fredrikstad zoo");
+
+        //animals ArrayList
+        ArrayList<Animal> animals = new ArrayList<>();
+        animals.add(cat);
+        animals.add(dog);
+        animals.add(cow);
+
+        //add animals ArrayList to zoo
+        zoo.setAnimals(animals);
+
+        //print data of each animal in foreach loop using toString()
+        for(Animal animal : zoo.getAnimals()){
+            System.out.println(animal);
+        }
 
     }
 }

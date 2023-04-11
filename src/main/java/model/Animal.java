@@ -42,6 +42,6 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return "Name: "+this.getName()+"\nDiet: "+this.getDiet()+ "\nAge: "+this.getAge()+"\nSpeed: "+this.calculateSpeed();
+        return "Name: "+this.getName()+"\nDiet: "+this.getDiet()+ "\nAge: "+this.getAge()+"\nSpeed: "+this.calculateSpeed()+"\n";
     }
 }

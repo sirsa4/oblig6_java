@@ -14,7 +14,7 @@ public abstract class Animal {
     //oppgave 2.1 C
     //this method has to be implemented by subclasses
     //each can have its own logic
-    public abstract void calculateSpeed();
+    public abstract int calculateSpeed();
 
     public String getName() {
         return name;
@@ -42,6 +42,6 @@ public abstract class Animal {
 
     @Override
     public String toString() {
-        return "Name: "+this.getName()+"\nDiet: "+this.getDiet()+ "\nAge: "+this.getAge()+"\nSpeed: ";
+        return "Name: "+this.getName()+"\nDiet: "+this.getDiet()+ "\nAge: "+this.getAge()+"\nSpeed: "+this.calculateSpeed();
     }
 }
